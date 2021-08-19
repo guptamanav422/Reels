@@ -15,4 +15,15 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+// flag => using google 
+let provider=new firebase.auth.GoogleAuthProvider();
+
+// object jiske andr login/logout/signup 
+export const auth=firebase.auth();
+
+export const signInWithGoogle=()=>{
+    // ki mujhe popup ko use krke sign up krna hai with google 
+    auth.signInWithPopup(provider);
+}
+
 export default firebase;
