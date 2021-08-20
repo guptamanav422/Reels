@@ -5,7 +5,7 @@ import {Redirect} from "react-router-dom"
 let Login=()=>{
 
     let user=useContext(authContext);
-    console.log(user);
+    // console.log(user);
     return(
         <>
         {user?<Redirect to="/" />:"" }
