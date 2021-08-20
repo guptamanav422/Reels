@@ -17,7 +17,7 @@ let AuthProvider=(props)=>{
         // user ka object dedega or jbh logout krrega tbh null dedega 
         let unSub=auth.onAuthStateChanged( async (user)=>{
             if(user){
-                console.log(user.uid);
+                // console.log(user.uid);
                 let {displayName,email,uid,photoURL}=user;
 
                 let docRef=firestore.collection("users").doc(uid);
