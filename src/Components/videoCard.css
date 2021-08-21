@@ -11,7 +11,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: none;
+    position: absolute;
+    z-index: 1;
 }
 
 .video-card-username{
@@ -20,6 +21,7 @@
     position: absolute;
     bottom: 10rem;
     left: 20px;
+    z-index: 2;
 }
 
 .video-card-music{
@@ -29,20 +31,70 @@
     position: absolute;
     bottom: 9rem;
     left: 12px;
+    z-index: 2;
 }
 
 .video-card-comment{
     color:white;
     font-size: 2.5rem;
     position: absolute;
-    bottom: 14rem;
+    top: 25rem;
     right: 20px;
+    z-index: 2;
 }
 
 .video-card-like{
     color:red;
     font-size: 2.5rem;
     position: absolute;
-    bottom: 11rem;
+    top: 28rem;
     right: 20px;
+    z-index: 2;
+}
+
+.video-card-comment-box{
+    height: 40%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.comment-form{
+    height: 10%;
+    display: flex;
+}
+
+.comment-form input{
+    width: 85%;
+    height: 100%;
+}
+
+.comment-form button{
+    height: 100%;
+    width: 15%;
+    border: none;
+    color: #3498db;
+}
+
+.actual-comments{
+    height: 90%;
+}
+
+.post-user-comment img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.post-user-comment{
+    display: flex;
+    align-items: center;
+}
+
+.post-user-comment div{
+    margin-top: 4px;
+    margin-left: 20px;
 }

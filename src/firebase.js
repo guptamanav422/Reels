@@ -3,6 +3,7 @@ import "firebase/firestore"
 // firebase authentication module 
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/storage"
 
 const firebaseConfig = {
     apiKey: "AIzaSyB91CQzSYmCDLHgidlpE8QI98VLmT2chHg",
@@ -21,6 +22,8 @@ let provider=new firebase.auth.GoogleAuthProvider();
 // object jiske andr login/logout/signup 
 export const auth=firebase.auth();
 export const firestore=firebase.firestore();
+
+export const storage=firebase.storage();
 export const signInWithGoogle=()=>{
     // ki mujhe popup ko use krke sign up krna hai with google 
     auth.signInWithPopup(provider);

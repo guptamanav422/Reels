@@ -15,3 +15,12 @@
     overflow-y: scroll;
     scroll-snap-type:y mandatory ;
 }
+
+input[type="file"]{
+    width: 6rem;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 12rem;
+    right: 20px;
+}
